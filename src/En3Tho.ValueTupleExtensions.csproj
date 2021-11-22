@@ -8,13 +8,28 @@
     <Title>En3Tho.ValueTupleExtensions</Title>
     <Description>Various ValueTuple extensions for pattern matching and qol</Description>
     <Copyright>Copyright (c) 2020 En3Tho-</Copyright>
-    <PackageProjectUrl>https://github.com/En3Tho/Something-obviously-useless/tree/master/SomethingObviouslyUseless/En3Tho.ValueTupleExtensions</PackageProjectUrl>
-    <PackageLicenseUrl>https://github.com/En3Tho/Something-obviously-useless/blob/master/Licence.txt</PackageLicenseUrl>
-    <RepositoryUrl>https://github.com/En3Tho/Something-obviously-useless/tree/master/SomethingObviouslyUseless</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/En3Tho/ValueTupleExtensions</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/En3Tho/ValueTupleExtensions/blob/main/LICENSE</PackageLicenseUrl>
+    <RepositoryUrl>https://github.com/En3Tho/ValueTupleExtensions</RepositoryUrl>
     <Authors>En3Tho-</Authors>
+    <PackageVersion>1.0.1</PackageVersion>
+    <AssemblyVersion>1.0.1</AssemblyVersion>
+    <FileVersion>1.0.1</FileVersion>
+    <!-- Optional: Publish the repository URL in the built .nupkg (in the NuSpec <Repository> element) -->
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <!-- Optional: Build symbol package (.snupkg) to distribute the PDB containing Source Link -->
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>ValueTupleExtensions.snk</AssemblyOriginatorKeyFile>
+    <PublicSign>true</PublicSign>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="5.0.0" />
   </ItemGroup>
 
